@@ -20,6 +20,7 @@ const changeModeButton = document.querySelector('.changeMode');
 applySavedTheme();
 
 /*Поиск и добавление в избранное*/
+
 function searchMovie(title) {
     const apiKey = '75fcaf4c'; 
     const url = `https://www.omdbapi.com/?t=${encodeURIComponent(title)}&apikey=${apiKey}`;
