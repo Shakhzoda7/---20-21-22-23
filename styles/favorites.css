@@ -57,3 +57,11 @@ body.dark-theme {
     padding: 4px;
     border-radius: 200px;
 }
+
+.displayFavorites{
+    display: flex;
+    gap: 100px;
+    max-width: 1200px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+}
