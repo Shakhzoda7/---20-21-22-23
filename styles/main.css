@@ -1,0 +1,92 @@
+.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark-theme {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+.wrapMain{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    gap: 30px;
+    margin: 50px auto;
+}
+
+.changeMode{
+    padding: 14px 20px;
+    background-color: blue;
+    display: inline-block;
+    color: white;
+    border-radius: 200px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 200px;
+    font-size: 18px;
+}
+
+#tabs .main{
+    flex-basis: 596px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 60px;
+    color: white;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 24px;
+    background-color: blue;
+}
+
+#tabs .favorites{
+    flex-basis: 596px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 60px;
+    color: rgba(255, 255, 255, 0.603);
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 24px;
+    background-color: lightslategray;
+}
+
+#tabs {
+    margin-top: 20px;
+    display: flex;
+    background-color: lightslategray;
+    padding: 4px;
+    border-radius: 200px;
+}
+
+.searchMovie{
+    display: flex;
+    gap: 20px;
+}
+
+
+input{
+    flex-basis: 980px;
+    border: none; 
+    padding: 20px 40px;
+    border: 2px solid rgba(128, 128, 128, 0.498);
+    border-radius: 300px;
+    font-size: 20px;
+    background-color: white;
+}
+
+button{
+    flex-basis: 200px;
+    border: none; 
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 50px;
+    border-radius: 200px;
+    background-color: blue;
+    color: white;
+}
+
