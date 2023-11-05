@@ -1,12 +1,18 @@
-//Смена и сохранение темы
-
-const bodyClass = document.body.classList;
-const savedTheme = localStorage.getItem('theme') || 'light';
-bodyClass.add(savedTheme);
-
-document.querySelector('.changeMode').addEventListener('click', () => {
-  const isDark = bodyClass.contains('dark-theme');
-  bodyClass.toggle('light-theme', isDark);
-  bodyClass.toggle('dark-theme', !isDark);
-  localStorage.setItem('theme', isDark ? 'light' : 'dark');
-});
+function toggleTheme() {
+    document.body.classList.toggle('dark-theme');
+    localStorage.setItem('theme', document.body.classList.contains('dark-theme') ? 'dark' : 'light');
+}
+  
+function applySavedTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-theme');
+    }
+}
+  
+const changeModeButton = document.querySelector('.changeMode');
+  if (changeModeButton) {
+    changeModeButton.addEventListener('click', toggleTheme);
+}
+  
+applySavedTheme();

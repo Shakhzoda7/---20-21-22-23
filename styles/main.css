@@ -1,13 +1,7 @@
-.light-theme {
-    background-color: #ffffff;
-    color: #000000;
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
 }
-
-.dark-theme {
-    background-color: #000000;
-    color: #ffffff;
-}
-
 
 .wrapMain{
     display: flex;
